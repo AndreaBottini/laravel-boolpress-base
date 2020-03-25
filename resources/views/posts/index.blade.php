@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+<form action="{{route('posts.create')}}" method="get">
+<button>VAI AL FORM</button>
+</form>
     @foreach ($posts as $post)
     <ul>
         <li>{{$post->title}}</li>
